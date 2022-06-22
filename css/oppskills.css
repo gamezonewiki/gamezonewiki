@@ -3,7 +3,7 @@
     src: url(CallOfOpsDuty-qAyq.ttf);
 }
 body {
-    background-image: url(./images/bgim.png);
+    background-color: #000;
     color: white;
     margin:0;
 }
