@@ -1,0 +1,452 @@
+@font-face {
+    font-family: CallOfDuty;
+    src: url(CallOfDuty.ttf);
+}
+@font-face {
+    font-family: ModernWarfare;
+    src: url(ModernWarfare.ttf);
+}
+@font-face {
+    font-family: MajorLeague;
+    src: url(MajorLeague.ttf);
+}
+
+* {
+    color: #ffff;
+    font-weight: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: absolute;
+    background: #000;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.bg { /*warzone background*/
+    position: relative;
+    height: auto;
+    max-width: 100%;
+    margin-top: -80px;
+    opacity: 80%;
+}
+
+.bg_gif { /*warzone gif background*/
+    position: absolute;
+    margin-top: -140px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    opacity: 0%;
+    transition: all 0.7s ease;
+}
+
+.logo { /*warzone logo*/
+    position: absolute;
+    background: transparent;
+    top: 240px;
+    left: 60px;
+    width: 30%;
+    height: auto;
+    z-index: 2;
+}
+
+/* MAIN Navigation Bar */
+
+.web_logo{
+    line-height: 0;
+    float: left;
+    margin-left: 20px;
+}
+
+.contain {
+    background: rgb(185, 180, 180);
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+.navigation {
+    list-style: none;
+    float: right;
+    display: flex;
+    margin: 0px;
+}
+
+.navigation ul{
+    margin: 5px;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.navigation li{
+    line-height: 0.5;
+    float: left;
+    font-family: CallofDuty;
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.navigation li a{
+    text-align: left;     
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 35px 30px;   
+}
+
+.navigation li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+
+}
+
+main{
+   width: 100%;
+   height: auto;
+   margin-bottom: -10px;
+}
+
+/* Navigation Bar */
+/*---------------------------------*/
+
+.topnav {
+    float: right;
+    font-weight: normal;
+    font-family: CallofDuty;
+    background-color: rgb(185, 180, 180);
+    overflow: hidden;
+    margin-top: 20px; margin-bottom: -20px;
+    margin-right: 40px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    padding-left: 25px; padding-right: 25px;
+    background-color: inherit;
+    font-family: CallofDuty;
+    margin: 0;
+}
+
+.dropdown {font-size: 15px;}
+.dropbtn {font-size: 20px;}
+.nav {font-size: 20px;}
+
+/*for dropdown content (hidden by default) */
+.dropdown-content1, .dropdown-content2, .dropdown-content3 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content1 {min-width: 137px;}
+.dropdown-content2 {min-width: 183px;}
+.dropdown-content3 {min-width: 125px;}
+
+
+.dropdown-content1 a, .dropdown-content2 a, .dropdown-content3 a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
+
+.dropdown-content1 a:hover, .dropdown-content2 a:hover, .dropdown-content3 a:hover   {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content1, 
+.dropdown:hover .dropdown-content2, 
+.dropdown:hover .dropdown-content3 {
+    display: block;
+}
+
+/*---------------------------------*/
+
+/*navigation bar*/
+
+li, a {
+    font-family: CallOfDuty;
+    color: #ffff;
+    background-color: transparent; 
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px 30px; 
+}
+
+nav {
+    margin-top: 0%;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_link li {
+    display: inline-block;
+
+}
+
+/*effects & animations*/
+
+.bg_gif:hover {
+    opacity: 80%;
+}
+
+nav li a:hover {
+    text-decoration: underline #ff0000;
+    text-decoration-thickness: 2px;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.list li a:hover {
+    color: #808080;
+    transition: all 0.3s ease-in-out;
+}
+
+.bp_button1:hover, .bp_button2:hover {
+    transition: all 0.5s ease-in-out;
+    background: linear-gradient(180deg, #d6cdad 0%, rgba(172, 148, 70, 0.58) 100%);
+}
+
+.announcement_btn:hover {
+    background: #808080;
+    transition: all 0.3s ease-in-out;
+}
+
+.button1:hover, .button2:hover, .button3:hover {
+    background: #808080;
+    transition: all 0.3s ease-in-out;
+}
+
+/*line designs*/
+
+#campaign, #zombies {
+    padding-left: 5px;
+    border-left: 10px solid #ff0000;
+}
+
+#multiplayer, #requirements {
+    padding-right: 5px;
+    border-right: 10px solid #ff0000;
+}
+
+.vertical_line {
+    float: left;
+    margin-left: 10%;
+    margin-top: 3%;
+    height: 580px;
+}
+
+#line , hr { /*before announcement*/
+    margin-top: 10%;
+    background-color: #ffff;
+    border: 2px solid #ffff;
+    padding-left: 0; padding-right: 0;
+}
+
+/*content 1*/
+
+h1 {
+    font-family: Calibri;
+    color: #ffff;
+    font-size: 20px;
+}
+
+h2 {
+    font-family: CallOfDuty;
+    color: #ffff;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: ModernWarfare;
+    color: #ffff;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.battlepass {
+    height: auto;
+    max-width: 100%;
+    margin-top: 10%;
+}
+
+#battlepass {
+    opacity: 0;
+    position: absolute;
+    float: left;
+    top: 57.5%;
+}
+
+.classic_bp {
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+#label1 {
+    font-weight: normal;
+    font-family: Calibri;
+    color: #ffff;
+    font-size: 20px;
+    text-align: left;
+}
+
+.bundle_bp {
+    text-align: right;
+    margin-top: 20%;
+    margin-right: 10%;
+}
+
+.bp_button1, .bp_button2 {
+    font-family: CallOfDuty;
+    text-align: center;
+    color: #ffff;
+    background: linear-gradient(180deg, #847544 0%, rgba(132, 117, 68, 0.58) 100%);
+    padding-left: 15px; padding-right: 15px; padding-top: 2px; padding-bottom: 2px;
+    font-size: 20px;
+}
+
+#label2 {
+    font-weight: normal;
+    font-family: Calibri;
+    color: #ffff;
+    font-size: 20px;
+    text-align: right;
+}
+
+.bp1 {
+    float: right;
+    right: 0px;
+    width: 50%;
+    height: 50%;
+    opacity: 70%;
+}
+
+.bp2 {
+    float: left;
+    left: 0px;
+    width: 50%;
+    height: 50%;
+    opacity: 70%;
+}
+
+/*content 2*/
+
+#announcement {
+    font-family: ModernWarfare;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 5%;
+}
+
+#message {
+    font-family: CallOfDuty;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 2%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.announcement_btn {
+    text-align: center;
+    color: #000;
+    background: #D2D2D2;
+    font-size: 20px;
+    padding-left: 10px; padding-right: 10px; padding-top: 2px; padding-bottom: 2px;
+    width: 160px;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+
+/*footer*/
+
+.logo2  {
+    margin-left: 42%;
+    margin-top: 30px;
+    margin-bottom: -25px;
+}
+
+hr {
+    margin-top: 5%;
+}
+
+div.trivia a{
+    color: grey;
+    text-decoration: none;
+    list-style: none;
+}
+
+div.list a {
+    color: white;
+    text-decoration: none;
+}
+
+div.list {
+    font-family: Calibri;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+div.list ul li {
+    color: #fff;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin-top: -100px;  
+}
+
+#copyright {
+    font-family: Calibri;
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
